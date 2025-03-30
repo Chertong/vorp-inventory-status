@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📦 VORP Inventory PRO - สถานะงาน</title>
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; background-color: #f3f0e6; padding: 2rem; }
+    .container { max-width: 800px; margin: auto; background: white; padding: 2rem; border-radius: 1rem; box-shadow: 0 0 15px rgba(0,0,0,0.1); }
+    h1 { text-align: center; margin-bottom: 2rem; color: #5e4322; }
+    ul { list-style: none; padding: 0; }
+    li { padding: 0.75rem 1rem; margin-bottom: 0.5rem; border-left: 6px solid transparent; background: #f9f9f9; border-radius: 0.5rem; display: flex; align-items: center; gap: 0.5rem; }
+    li span.label { font-size: 1.5rem; }
+    li.done { border-color: #4CAF50; }
+    li.working { border-color: #FFC107; background-color: #fffaf0; }
+    li.pending { border-color: #aaa; }
+    li.problem { border-color: #f44336; background-color: #fff0f0; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>📦 VORP Inventory PRO - สถานะงานล่าสุด</h1>
+    <ul id="task-list">
+      <li class="done"><span class="label">✅</span><span class="text">ปรับระบบ <code>registerUsableItem</code> ให้ export ได้จริง</span></li>
+      <li class="working"><span class="label">🛠️</span><span class="text">กำลังแก้ <code>addInventory</code>, <code>removeInventory</code>, <code>isCustomInventoryRegistered</code></span></li>
+      <li class="pending"><span class="label">⏳</span><span class="text">เตรียมสร้างระบบคลังกลาง (กล่อง/บ้าน/รถม้า)</span></li>
+      <li class="pending"><span class="label">⏳</span><span class="text">เพิ่มระบบ Quick Slot + Hotbar</span></li>
+      <li class="pending"><span class="label">⏳</span><span class="text">Stack อัตโนมัติ + Split Stack</span></li>
+      <li class="pending"><span class="label">⏳</span><span class="text">โยนไอเท็มลงพื้น + เก็บได้</span></li>
+      <li class="pending"><span class="label">⏳</span><span class="text">Cooldown หลังใช้ไอเท็ม</span></li>
+      <li class="pending"><span class="label">⏳</span><span class="text">UI ใหม่ Immersive + Cowboy Style</span></li>
+      <li class="pending"><span class="label">⏳</span><span class="text">เชื่อมระบบกับ: NPC, ร้านค้า, เควส, อาชีพ</span></li>
+      <li class="pending"><span class="label">⏳</span><span class="text">ลดการใช้ CPU/Memory</span></li>
+    </ul>
+  </div>
+</body>
+</html>
